@@ -1,0 +1,114 @@
+
+@import './_variable.scss';
+@import './_mixin.scss';
+
+
+.button-section {
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+    .button-row {
+        display: flex;
+        align-items: center;
+        p{
+            min-width: 150px;
+        }
+    }
+}
+.sm {
+    height: var(--sm-height);
+    font-size: var(--sm-txt-size);
+}
+.md {
+    height: var(--md-height);
+    font-size: var(--md-txt-size);
+}
+.lg {
+    height: var(--lg-height);
+    font-size: var(--lg-txt-size);
+}
+.button-business-primary {
+    @include button;
+    @include button-primary;
+    @include button-business;
+    &:hover {
+        background-color:var(--main-bg-color);
+    }
+    &:focus {
+        box-shadow: 0 0 0 1.5pt var(--main-bg-color);
+    }
+    &:active {
+        background-color: var(--main-bg-dark-blue);
+        box-shadow: none;
+    }
+    &:disabled {
+        @include disabled;
+    }
+}
+.button-business-sec {
+    @include button;
+    @include button-business;
+    @include button-sec;
+    &:hover {
+        background-color:var(--sec-bg-color);
+    }
+    &:focus {
+        border-style: double;
+        border-width: 4px;
+    }
+    &:active {
+        background-color: var(--main-bg-active-light-blue);
+        border: 1px solid var(--main-bg-color);
+    }
+    &:disabled {
+        @include disabled;
+    }
+}
+.button-consumer-primary {
+    @include button;
+    @include button-primary;
+    @include button-sonsumer;
+    background: linear-gradient(to right,var(--main-bg-dark-blue), var(--main-bg-general-blue), var(--main-bg-hover-light-blue));
+    &:hover {
+        background: linear-gradient(to right,var(--main-bg-dark-blue), 70%, var(--main-bg-hover-light-blue));
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1pt var(--main-shadow-blue);
+    }
+    &:active {
+        background: linear-gradient(to right,var(--main-bg-active-dark-blue) 70%, var(--main-bg-active-medium-blue));
+    }
+    &:disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+}
+.button-consumer-sec {
+    @include button;
+    @include button-sec;
+    @include button-sonsumer;
+    border: 2px solid var(--main-bg-dark-blue);
+    color: var(--main-bg-dark-blue);
+    &:hover {
+        background: linear-gradient(to right,var(--main-bg-dark-blue) 70%, var(--main-bg-hover-light-blue));
+        cursor: pointer;
+        color: var(--main-txt-color);
+    }
+    &:focus { 
+        box-shadow: 0 0 0 2pt var(--main-shadow-blue);
+    }
+    &:active {
+        background: linear-gradient(to right,var(--main-bg-active-dark-blue) 70%, var(--main-bg-active-medium-blue));
+        box-shadow: none;
+    }
+    &:disabled{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+

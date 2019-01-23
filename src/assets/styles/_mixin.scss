@@ -1,0 +1,36 @@
+@mixin disabled {
+    background-color: var(--main-disabled-bg-color);
+    color: var(--main-disabled-txt-color);
+    border: var(--main-disabled-bg-color);
+    pointer-events: none;
+}
+@mixin button {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Source Sans Pro Semibold;
+    border-radius: var(--main-border-radius);
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+    outline: none;
+    text-align: center;
+    .button-text {
+        width: 100%;
+    }
+}
+@mixin button-primary {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+@mixin button-sec {
+    background-color: var(--sec-bg-color);
+    color: var(--sec-txt-color);
+}
+@mixin button-business {
+    min-width:var(--min-width-business);
+    font-size: 16px;
+}
+@mixin button-sonsumer {
+    min-width:var(--min-width-consumer);
+    min-height: var(--min-height-consumer);
+    font-size: 20px;
+}

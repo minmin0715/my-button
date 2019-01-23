@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Source Sans Pro Semibold';
+    src: url('../fonts/SourceSansPro-SemiBold.ttf');
+}
+:root {
+    // color variables
+    --main-white: #ffffff;
+    --main-light-grey: #E9E9E9;
+    --main-medium-grey: #868686;
+    // main bg colors
+    --main-bg-general-blue: #00739D;
+    --main-bg-dark-blue: #005E80;
+    // bg active colors
+    --main-bg-active-dark-blue: #244D65;
+    --main-bg-active-medium-blue: #30617f;
+    --main-bg-active-light-blue: #EFFBFE;
+    // bg hover color
+    --main-bg-hover-light-blue: #027DAB;
+    // shadow color
+    --main-shadow-blue: #a7cde2;
+    // variables for primary button bg and text color//
+    --main-bg-color: var(--main-bg-general-blue);
+    --main-txt-color: var(--main-white);
+    --sec-bg-color: var(--main-white);
+    --sec-txt-color: var(--main-bg-general-blue);
+    --main-padding: 5px;
+    --main-border-radius: 3px;
+    //variables for button height and text size//
+    --height-index: 4px;
+    --txt-size-index: 1px;
+    --lg-height: 32px;
+    --md-height: calc(var(--lg-height) - var(--height-index));
+    --sm-height: calc(var(--md-height) - var(--height-index));
+    --lg-txt-size: 16px;
+    --md-txt-size: calc(var(--lg-txt-size) - var(--txt-size-index));
+    --sm-txt-size: calc(var(--md-txt-size) - var(--txt-size-index));
+    --min-width-business: 90px;
+    // variables for business theme disabled button//
+    --main-disabled-bg-color: var(--main-light-grey);
+    --main-disabled-txt-color: var(--main-medium-grey);
+    //variables for consumer theme button size//
+    --min-width-consumer: 200px;
+    --min-height-consumer: 45px;
+}
