@@ -2,19 +2,21 @@
 @import './_variable.scss';
 @import './_mixin.scss';
 
-
+* {
+    box-sizing: border-box;
+}
 .button-section {
     margin: auto;
     position: absolute;
-    width: 500px;
+    width: 600px;
     left: 0;
     right: 0;
-    padding-top: 30px;
+    padding-top: 40px;
     .button-row {
         display: flex;
         align-items: center;
         p{
-            min-width: 150px;
+            min-width: 220px;
         }
     }
 }

@@ -5,7 +5,7 @@
     pointer-events: none;
 }
 @mixin button {
-    box-sizing: border-box;
+    
     text-align: center;
     font-family: Source Sans Pro Semibold;
     border-radius: var(--main-border-radius);
@@ -14,7 +14,7 @@
     outline: none;
     text-align: center;
     .button-text {
-        width: 100%;
+        padding: var(--main-padding);
     }
 }
 @mixin button-primary {
@@ -24,6 +24,7 @@
 @mixin button-sec {
     background-color: var(--sec-bg-color);
     color: var(--sec-txt-color);
+    border: 1px solid var(--sec-txt-color);
 }
 @mixin button-business {
     min-width:var(--min-width-business);
