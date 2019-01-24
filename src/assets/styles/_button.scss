@@ -7,7 +7,6 @@
 }
 .button-section {
     margin: auto;
-    position: absolute;
     width: 600px;
     left: 0;
     right: 0;
@@ -58,12 +57,14 @@
         background-color:var(--sec-bg-color);
     }
     &:focus {
-        border-style: double;
-        border-width: 4px;
+        outline-style: double;
+        border: 1px solid var(--sec-txt-color);
+        border: none;
     }
     &:active {
         background-color: var(--main-bg-active-light-blue);
         border: 1px solid var(--main-bg-color);
+        outline: none;
     }
     &:disabled {
         @include disabled;

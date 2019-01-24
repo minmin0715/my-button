@@ -6,7 +6,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Button></Button>
+        <Button isBusinessTheme={true} disabled={true}></Button>
+        <Button isConsumerTheme={true}></Button>
       </div>
     );
   }
