@@ -1,0 +1,12 @@
+.App {
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;  
+    padding-top: 30px;
+    position: absolute;
+    .button-sections {
+        display: flex;
+        align-items: flex-start;
+    }
+}

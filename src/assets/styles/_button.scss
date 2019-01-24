@@ -6,30 +6,33 @@
     box-sizing: border-box;
 }
 .button-section {
-    margin: auto;
-    width: 600px;
-    left: 0;
-    right: 0;
-    padding-top: 40px;
-    .button-row {
+    width: 50%;
+        .button-row {
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
         p{
             min-width: 220px;
         }
+        .buttons-group {
+            display: flex;
+            flex-direction: column;
+        }
     }
+ 
 }
-.sm {
-    height: var(--sm-height);
-    font-size: var(--sm-txt-size);
+.lg {
+    height: var(--lg-height);
+    font-size: var(--lg-txt-size);
 }
 .md {
     height: var(--md-height);
     font-size: var(--md-txt-size);
 }
-.lg {
-    height: var(--lg-height);
-    font-size: var(--lg-txt-size);
+
+.sm {
+    height: var(--sm-height);
+    font-size: var(--sm-txt-size);
 }
 .button-business-primary {
     @include button;

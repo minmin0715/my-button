@@ -12,27 +12,35 @@ class Button extends Component {
                     <h1>This is the Business Theme Button.</h1>
                     <div className="button-row">
                         <p>Primary Button</p>
-                        <button className="button-business-primary lg"><span className="button-text">Primary</span></button>
-                        {/* <button className="button-business-primary md"><span className="button-text">Primary</span></button>
-                        <button className="button-business-primary sm"><span className="button-text">Primary</span></button> */}
+                        <div className="buttons-group">
+                            <button className="button-business-primary lg"><span className="button-text">Primary</span></button>
+                            <button className="button-business-primary md"><span className="button-text">Primary</span></button>
+                            <button className="button-business-primary sm"><span className="button-text">Primary</span></button>
+                        </div>
                     </div>
                     <div className="button-row">
                         <p>Primary Button Disabled</p>
-                        <button disabled={true} className="button-business-primary lg"><span className="button-text">Primary</span></button>
-                        {/* <button disabled={true} className="button-business-primary md"><span className="button-text">Primary</span></button>
-                        <button disabled={true} className="button-business-primary sm"><span className="button-text">Primary</span></button> */}
+                        <div className="buttons-group">
+                            <button disabled={true} className="button-business-primary lg"><span className="button-text">Primary</span></button>
+                            <button disabled={true} className="button-business-primary md"><span className="button-text">Primary</span></button>
+                            <button disabled={true} className="button-business-primary sm"><span className="button-text">Primary</span></button>
+                        </div>
                     </div>
                     <div className="button-row">
                         <p>Secondary Button</p>
-                        <button className="button-business-sec lg"><span className="button-text">Secondary</span></button>
-                        {/* <button className="button-business-sec md"><span className="button-text">Secondary</span></button>
-                        <button className="button-business-sec sm"><span className="button-text">Secondary</span></button> */}
+                        <div className="buttons-group">
+                            <button className="button-business-sec lg"><span className="button-text">Secondary</span></button>
+                            <button className="button-business-sec md"><span className="button-text">Secondary</span></button>
+                            <button className="button-business-sec sm"><span className="button-text">Secondary</span></button>
+                        </div>
                     </div>
                     <div className="button-row">
                         <p>Secondary Button Disabled</p>
-                        <button disabled={true} className="button-business-sec lg"><span className="button-text">Secondary</span></button>
-                        {/* <button disabled={true} className="button-business-sec md"><span className="button-text">Secondary</span></button>
-                        <button disabled={true} className="button-business-sec sm"><span className="button-text">Secondary</span></button> */}
+                        <div className="buttons-group">
+                            <button disabled={true} className="button-business-sec lg"><span className="button-text">Secondary</span></button>
+                            <button disabled={true} className="button-business-sec md"><span className="button-text">Secondary</span></button>
+                            <button disabled={true} className="button-business-sec sm"><span className="button-text">Secondary</span></button>
+                        </div>
                     </div>
                 </div>
             }

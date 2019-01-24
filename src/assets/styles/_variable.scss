@@ -31,10 +31,10 @@
     --lg-height: 32px;
     --md-height: calc(var(--lg-height) - var(--height-index));
     --sm-height: calc(var(--md-height) - var(--height-index));
-    --lg-txt-size: 16px;
+    --lg-txt-size: 15px;
     --md-txt-size: calc(var(--lg-txt-size) - var(--txt-size-index));
     --sm-txt-size: calc(var(--md-txt-size) - var(--txt-size-index));
-    --min-width-business: 90px;
+    --min-width-business: 80px;
     // variables for business theme disabled button//
     --main-disabled-bg-color: var(--main-light-grey);
     --main-disabled-txt-color: var(--main-medium-grey);
